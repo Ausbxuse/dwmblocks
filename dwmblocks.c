@@ -22,7 +22,7 @@ typedef struct {
         char cmdoutprv[CMDLENGTH];
 } Block;
 
-#include "blocks.h"
+#include "config.h"
 
 static void buttonhandler(int signal, siginfo_t *si, void *ucontext);
 static void getcmd(Block *block, int sigval);

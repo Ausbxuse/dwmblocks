@@ -10,7 +10,7 @@ X11LIBS := $(shell pkg-config --libs x11)
 
 all: dwmblocks sigdwmblocks
 
-dwmblocks: dwmblocks.c blocks.h
+dwmblocks: dwmblocks.c config.h
 	${CC} -o $@ ${CFLAGS} ${CFLAGSEXTRA} ${X11CFLAGS} $< ${X11LIBS}
 
 sigdwmblocks: sigdwmblocks.c
