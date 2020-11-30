@@ -19,13 +19,13 @@ static Block blocks[] = {
 	{PATH("memory"), NULL,	2,	7},
 	{PATH("cpu"), NULL,	5,	6},
 	{PATH("volume"), NULL,	1,	5}, // to be fix -- interval cannot be set to 0
-//	{PATH("charge.sh"), NULL,	1,	4},
 	{PATH("battery"), NULL,	30,	3},
+//	{PATH("charge.sh"), NULL,	1,	4},
 	{PATH("wifi"), PATH("wifi_button"),	5,	2},
-	{PATH("clock"), NULL,	60,	1},
+	{PATH("calendar"), NULL,	300,	10},
+	{PATH("clock"), PATH("clock"),	1,	1},
 
 
         { NULL } /* just to mark the end of the array */
 };
-
-static const char *delim =  " ";
+static const char *delim =  " \x0b \x0b";
