@@ -14,18 +14,20 @@
 static Block blocks[] = {
 /*	pathu				pathc					interval	signal */
 
-	{PATH("traffic"), NULL,	2,	9},
-	{PATH("cpu_usage"), NULL,	2,	8},
-	{PATH("memory"), NULL,	2,	7},
-	{PATH("cpu"), NULL,	5,	6},
-	{PATH("volume"), NULL,	1,	5}, // to be fix -- interval cannot be set to 0
+	{PATH("traffic"), NULL,	2,	11},
+//	{PATH("cpu_usage"), NULL,	2,	8},
+//	{PATH("memory"), NULL,	2,	7},
+//	{PATH("cpu"), NULL,	5,	6},
+	{PATH("volume"), NULL,	1,	5},
+	{PATH("mic"), NULL,	1,	5}, // to be fix -- interval cannot be set to 0
 	{PATH("battery"), NULL,	30,	3},
-//	{PATH("charge.sh"), NULL,	1,	4},
+	{PATH("music"), PATH("music"),	1,	4},
 	{PATH("wifi"), PATH("wifi_button"),	5,	2},
-	{PATH("calendar"), NULL,	300,	10},
+//	{PATH("calendar"), NULL,	300,	10},
 	{PATH("clock"), PATH("clock"),	1,	1},
+	{PATH("recording"), NULL, 1,	9},
 
 
         { NULL } /* just to mark the end of the array */
 };
-static const char *delim =  " \x0b \x0b";
+static const char *delim =  "\x0b ";
