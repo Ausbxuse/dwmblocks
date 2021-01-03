@@ -30,4 +30,5 @@ static Block blocks[] = {
 
         { NULL } /* just to mark the end of the array */
 };
-static const char *delim =  "\x0b ";
+
+static const char *delim = "\x0b";
