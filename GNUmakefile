@@ -1,4 +1,4 @@
-PREFIX := /usr/local
+PREFIX := /usr/local/bin
 #PREFIX := ${HOME}/.local/bin
 
 CC := gcc
